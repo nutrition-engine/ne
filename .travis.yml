@@ -1,0 +1,20 @@
+sudo: false
+language: go
+go:
+- 1.6
+script: go test $(go list ./... | grep -v /vendor/)
+install: true
+services:
+- mongodb
+addons:
+  apt:
+    sources:
+    - mongodb-3.2-precise
+    packages:
+    - mongodb-org-server
+branches:
+  only:
+  - master
+notifications:
+  slack:
+    secure: D9MxHdpuURHbeNImwH7WpeqSEP+3U312H+GhkKfKgffiD9dSqJXYtdOBl/FDgfdcZwjtNZAcLK6Dk5EXJ+qQo67hcZs0ZCzpc5H7EkI473HUIYe2uzZHi/qroOsxoJdje/M2+7MMYWU81jpWfb32GPGdZuhaYe/DXUAQomTrxPX/K0mtctwzB5EiCrYjcI5gldq/5vq922RK62OMX4BdEaOAqi0YpsYy9MSQJ5i3GwkkFuwCLgSBvg+tgXPjKBECQAz3ZyuaC4Ep1HdX1QZnx/xfP/umZVwV7SPTw4QW8ckUhprU/kvbBBUa/Az9BttNBGpVyCYDcUQL6EyjVnLX4lqwZmFx99ogqhqcvK1eODAely/JtfkW8Z9J8v2lnYU75V6MjjgUblxXA/nETc0fsTbP8/tSh98HyJg1JByBO0gXEUvvhKOE1EzWg87Z0dmSvPtY+UQXwN+6sSYD/ineJQ7gfBlJjvk4tHjK9c49s2QVLNQshi5xYCpHSB4y1GxEM8kF9gCl5Hu78Uuu91i0tI8eF/glciKYD+rkqTYX5lrcPxMATHhKyhao2wtvhxMUcYLm8Hewk7EVJyOSoNEbzD1Zrx2emizrABCLz0IkZ4M36ciOKmHmeXrsmqJivrowzoiZopnPpOLxr9y13ZCQC0PwqnbHml0I8e7Kxpomg50=

@@ -1,0 +1,32 @@
+[
+  {
+    "study_id": 1,
+    "redcap_event_name": "initial_arm_1",
+    "rf_date": "2015-12-07",
+    "rf_cmc_risk_cat": "3",
+    "rf_func_risk_cat": "2",
+    "rf_sb_risk_cat": "1",
+    "rf_util_risk_cat": "3",
+    "rf_risk_predicted": "3"
+  },
+  {
+    "study_id": 1,
+    "redcap_event_name": "visit1_arm_1",
+    "rf_date": "2016-04-01",
+    "rf_cmc_risk_cat": "3",
+    "rf_func_risk_cat": "2",
+    "rf_sb_risk_cat": "1",
+    "rf_util_risk_cat": "4",
+    "rf_risk_predicted": "4"
+  },
+  {
+    "study_id": "a",
+    "redcap_event_name": "initial_arm_1",
+    "rf_date": "2016-02-21",
+    "rf_cmc_risk_cat": "1",
+    "rf_func_risk_cat": "1",
+    "rf_sb_risk_cat": "2",
+    "rf_util_risk_cat": "1",
+    "rf_risk_predicted": "2"
+  }
+]
